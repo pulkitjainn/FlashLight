@@ -1,34 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.pulkit.flashlight.MainActivity"
     android:orientation="vertical"
-    android:weightSum="2">
+    android:background="@color/colorPrimary">
 
     <Button
-        android:layout_weight="1"
         android:id="@+id/on"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_centerHorizontal="true"
-        android:background="#FFFFFF"
-        android:textSize="50dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
         android:text="ON"
-        android:textStyle="italic"/>
-
-    <Button
-        android:layout_weight="1"
-        android:id="@+id/off"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:text="OFF"
-        android:background="#FFFFFF"
         android:textSize="50dp"
         android:textStyle="italic"
-        />
+        android:textColor="#FFF"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="143dp" />
 
-</LinearLayout>
 
+</RelativeLayout>
